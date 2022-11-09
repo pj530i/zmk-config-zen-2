@@ -37,7 +37,7 @@
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &tramons
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                    &kp LGUI     &trans       &kp RET      &kp SPACE  &mo 4   &kp BSPC
                         >;
                 };
@@ -71,7 +71,6 @@
                   &kp PG_UP &kp PG_DN &kp SPACE   &kp RET &to 0 &kp BSPC
                         >;
                 };
-        };
 
 
                 extra_layer {
@@ -88,4 +87,7 @@
                     	     &kp LGUI &trans   &kp RET   &kp SPACE   &trans    &kp BSPC
                         >;
 
+		};
+
+        };
 };
