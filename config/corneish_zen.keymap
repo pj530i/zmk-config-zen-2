@@ -31,13 +31,13 @@
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT |  UP | DWN | RGT |      | 
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | HOME| LFT |  UP | DWN | RGT | END  | 
+// | SHFT |     | PLAY|     |     |     |   | PGUP|     |     |     |     | PGDN |
 //                    | GUI |     | ENT |   | SPC |     | BKSP |
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp UP &kp DOWN  &kp RIGHT &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7   &kp N8 &kp N9    &kp N0    &kp DEL
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp HOME  &kp LEFT &kp UP &kp DOWN  &kp RIGHT &kp END
+   &kp LSHFT  &trans       &kp C_PP     &trans       &trans       &trans         &kp PG_UP &trans   &trans &trans    &trans    &kp PG_DN
                    &kp LGUI     &trans       &kp RET      &kp SPACE  &mo 4   &kp BSPC
                         >;
                 };
@@ -46,13 +46,13 @@
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
-// | CTRL |     |     |     |     |TO-3 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | CTRL |  `  |  {  |  _  |  }  |TO-3 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |  ~  |  [  |  -  |  ]  |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | ENT |   | SPC |     | BKSP |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
-   &kp LCTRL &trans   &trans &trans   &trans   &to 3      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp  TAB  &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT  &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
+   &kp LCTRL &kp GRAVE &kp LBRC  &kp UNDER &kp RBRC   &to 3    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &kp TILDE &kb LBKT  &kp MINUS &kp RBKT   &trans   &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &mo 4   &kp RET   &kp SPACE   &trans    &kp BSPC
                         >;
                 };
